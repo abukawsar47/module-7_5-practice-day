@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header-part{
+    text-align: center;
+    padding: 15px 0;
+    background-color: linen;
+}
+nav ul{
+    margin: 0;
+    list-style: none;
+}
+nav > ul > li {
+	position: relative;
+	margin: 0 20px;
+	display: inline-block;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: black;
+    display: block;
+    font-size: 20px;
+    transition: .5s;
+    font-weight: 600;
+}
+nav ul li:hover a {
+	background-color: #f7cea2;
+}
+nav ul ul {
+	position: absolute;
+	min-width: 200px;
+	display: none;
+	top: 30px;
+	left: 0;
+	transition: .4s;
+	padding: 10px 0;
+	text-align: left;
+    transition: .5s ease-in-out;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li:hover a{
+    background-color: lightpink;
+}
+nav ul ul li{
+    position: relative;
+}
