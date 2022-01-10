@@ -8,7 +8,32 @@
     <title>Table</title>
     <link rel="stylesheet" href="styles/nav.css">
     <style>
-
+        h1 {
+            font-size: 50px;
+        }
+        .table-part {
+            text-align: center;
+            justify-content: center;
+            display: grid;
+        }
+        table {
+            background-color: #faf0e6;
+        }
+        caption {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        table, td, th {
+            border: 1px solid gray;
+            border-collapse: collapse; 
+        }
+        td{
+            text-align: left;
+        }
+        th, td {
+            padding: 10px 20px;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +61,58 @@
         </nav>
     </header>
     <main>
-
+        <div class="table-part">
+            <h1>This is my table page</h1>
+            <table>
+                <caption>Friends and their birthday table</caption>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Home Address</th>
+                        <th>Date of Birth</th>
+                        <th>Treat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Md Kayes</td>
+                        <td>Hatirjheel</td>
+                        <td>25-12-1999</td>
+                        <td>Testy Treat</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Gazi Sabbi</td>
+                        <td>Rampura</td>
+                        <td>10-05-1999</td>
+                        <td>Yellow's Kitchen</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Billal Ahmed</td>
+                        <td>Motijheel</td>
+                        <td>12-01-2000</td>
+                        <td>KFC</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Fatema Jannat</td>
+                        <td>Cumilla</td>
+                        <td>25-04-2021</td>
+                        <td>Chilekotha</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Billal Ahmed</td>
+                        <td>New Market</td>
+                        <td>04-09-1999</td>
+                        <td>Dhakaiya Kabab</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
 

@@ -8,7 +8,27 @@
     <title>Inline Element</title>
     <link rel="stylesheet" href="styles/nav.css">
     <style>
-
+        h1{
+            font-size: 50px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            transition: color .5s ease;
+            font-size: 16px;
+        }
+        a:hover{
+            color: blue;
+        }
+        .inline-part{
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            background-color: #faf0e6;
+        }
+        .red{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +56,133 @@
         </nav>
     </header>
     <main>
-
+        <div class="inline-part">
+            <h1>This is inline element page</h1><hr>
+            <div class="inline-use">
+                <h2>The a element</h2>
+                <a target="_blank" class="red" href="https://www.w3schools.com">Visit W3Schools.com!</a>
+                <br>
+                <hr>
+                <h2>The abbr element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_abbr_test"><p>The <abbr class="red" title="World Health Organization">WHO</abbr> was founded in 1948.</p></a>
+                <br>
+                <hr>
+                <h2>The b element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_b"><p>This is normal text - <b class="red">and this is bold text</b>.</p></a>
+                <br>
+                <hr>
+                <h2>The bdo element</h2>
+                <a target="_blank" target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_bdo"><p>This paragraph will go left-to-right.</p>  
+                <p><bdo class="red" dir="rtl">This paragraph will go right-to-left.</bdo></p></a>
+                <br><hr>
+                <h2>The bdo element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_bdo"><p>This paragraph will go left-to-right.</p>  
+                <p><bdo class="red" dir="rtl">This paragraph will go right-to-left.</bdo></p> </a>
+                <br>
+                <hr>
+                <h2>The br element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_br"><p>To force<br class="red"> line breaks<br> in a text,<br> use the br<br> element.</p></a>
+                <br>
+                <hr>
+                <h2>The button Element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test"><button class="red" type="button" onclick="alert('Hello world!')">Click Me!</button></a>
+                <br>
+                <hr>
+                <h2>The cite element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_cite"><p><cite class="red">The Scream</cite> by Edward Munch. Painted in 1893.</p></a>
+                <br>
+                <hr>
+                <h2>The code element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_code"><p>The HTML <code class="red">button</code> tag defines a clickable button.</p><p>The CSS <code class="red">background-color</code> property defines the background color of an element.</p></a>
+                <br>
+                <hr>
+                <h2>The dfn element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_dfn"><p><dfn class="red">HTML</dfn> is the standard markup language for creating web pages.</p></a>
+                <br>
+                <hr>
+                <h2>The em element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_em"><p>You <em class="red">have</em> to hurry up!</p><p>We <em class="red">cannot</em> live like this.</p></a>
+                <br>
+                <hr>
+                <h2>The i element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_i"><p><i class="red">Lorem ipsum</i> is the most popular filler text in history.</p><p>The <i class="red">RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p></a>
+                <br>
+                <hr>
+                <h2>The img element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_test"><img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"></a>
+                <br>
+                <hr>
+                <h2>The input element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_test">
+                    <form action="/action_page.php">
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                  </form>
+                </a>
+                <br>
+                <hr>
+                <h2>The label element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_label">Label Element</a>
+                <br>
+                <hr>
+                <h2>The map and area elements</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_areamap">Image Map</a>
+                <br>
+                <hr>
+                <h2>The output element</h2>
+                <p><strong class="red">Note:</strong> The output element is not supported in Edge 12 (or earlier).</p>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_output">
+                    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="range" id="a" value="50">
+                        +<input type="number" id="b" value="25">
+                        =<output name="x" for="a b"></output>
+                    </form>
+                </a>
+                <br>
+                <hr>
+                <h2>The q element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_q"><p>WWF's goal is to: 
+                    <q class="red">Build a future where people live in harmony with nature.</q>
+                    We hope they succeed.</p></a>
+                <br>
+                <hr>
+                <h2>The samp element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_samp"><p>Message from my computer:</p><p><samp class="red">File not found.<br>Press F1 to continue</samp></p></a>
+                <br>
+                <hr>
+                <h2>The script element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_script">"Hello JavaScript!"</a>
+                <br>
+                <hr>
+                <h2>The select element</h2>
+                <a target="_blank" href=""><p>The <span class="red">select</span> element is used to create a drop-down list.</p></a>
+                <br>
+                <hr>
+                <h2>The small element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_small"><p>This is some normal text.</p>
+                    <p><small class="red">This is some smaller text.</small></p></a>
+                <br>
+                <hr>
+                <h2>The span element</h2>
+                A <span> element which is used to color a part of a text:
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_span"><p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p></a>
+                <br>
+                <hr>
+                <h2>The strong element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_phrase_strong"><p>This text is normal.</p><p><strong class="red">This text is important!</strong></p></a>
+                <br>
+                <hr>
+                <h2>The sub and sup elements</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tag_sub.asp"><p>This text contains <sub class="red">subscript</sub> text.</p>
+                    <p>This text contains <sup class="red">superscript</sup> text.</p></a>
+                <br>
+                <hr>
+                <h2>The textarea element</h2>
+                <a target="_blank" href="https://www.w3schools.com/tags/tag_textarea.asp">Textarea</a>
+            </div>
+        </div>
     </main>
     <footer>
 
